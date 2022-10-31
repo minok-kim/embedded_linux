@@ -2,9 +2,9 @@
 #define START_ID 1000
 
 struct student {
-    ;    
-    ;  
-    ; 
+    int id;    
+    char name[20];  
+    int score; 
 };
 
 int main(int argc, char* argv[]) 
@@ -20,8 +20,8 @@ int main(int argc, char* argv[])
    fp = fopen(argv[1], "w");
    printf("%-6s %-5s %-4s\n", "ID",  "Name",  "Score"); 	
 
-   while (                          ) 
-      fprintf(fp,                          );
+   while (scanf("%d %s %d", &record.id, record.name, &record.score) == 3                          ) 
+      fprintf(fp,"%d %s %d" record.id, record.name, record.score                          );
 	
    fclose(fp);
    return 0;
