@@ -6,11 +6,11 @@ int main(int argc, char *argv[])
    int c;
 
    if (argc < 2) 
-      fp =    stdin;                
+      fp = stdin;                
    else	
-      fp =    fopen(argv[1], "r");	  
+      fp = fopen(argv[1], "r");	  
 	
-   c =   getc(fp)    ;      		
+   c =  getc(fp);      		
    while (c != EOF) { 		
       putc(c, stdout); 		 
       c = getc(fp); 		 

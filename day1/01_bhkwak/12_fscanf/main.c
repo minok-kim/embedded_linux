@@ -17,10 +17,10 @@ int main(int argc, char* argv[])
       return 1; 
    }
 
-   fp = fopen(    ,  );
+   fp = fopen(argv[1], "r");
    printf("%-4s %-4s %-2s\n", "ID",  "Name",  "Score"); 	
 
-   while (      (    ,"%d %s %d", &record.id, record.name, &record.score) == 3) 
+   while (fscanf(fp ,"%d %s %d", &record.id, record.name, &record.score) == 3) 
       printf("%d %s %d\n", record.id, record.name, record.score);
 	
    fclose(fp);

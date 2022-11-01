@@ -3,7 +3,10 @@
 void mem_inspection(unsigned char* p, int N) {
     for(int i=0; i<N; i++)  
         printf("mem[%d] is 0x%02X at 0x%p\n", i, *(p+i), p+i);
+<<<<<<< HEAD
         printf("mem[%d] is 0x%02X at 0x%p\n", i, *(p+i), p+i);
+=======
+>>>>>>> 02081cf68e162d2e59ace6e9cf9198a7065dd7f3
 }
 
 #define ALINGED 1

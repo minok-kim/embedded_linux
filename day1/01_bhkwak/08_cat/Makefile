@@ -5,7 +5,7 @@ main.o: main.c
 # linking
 all: main.o 
 	gcc -o main main.o 
-	./main test.txt
+	./main test
 
 clean: 
 ifeq ($(OS),Windows_NT)
